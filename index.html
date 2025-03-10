@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enchant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      * {
+      margin: 2px;
+      padding: 0;
+      }
+
+      #splashscreen {
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to top, rgb(188, 188, 255), rgb(207, 222, 236) 50%);;
+}
+
+      .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      }
+
+      .navbar h2 {
+      color: whitesmoke;
+      font-family: 'Lucida handwriting';
+      padding-top: 10px;
+      font-weight: lighter;
+      font-size: 40px;
+      }
+
+  
+      .navbar {
+      background-image: url(Nav.jfif);
+      padding: 10px;
+      border-radius: 20px;
+      height: 90px;
+      text-align: center;
+      padding-left: 20px;
+      }
+
+      .nav a {
+      color: white;
+      font-size: large;
+      padding-left: 30px;
+      }
+
+      .headline {
+      width: 100%;
+      text-align: center;
+      height: 70px;
+      }
+
+      .Text {
+      font-family: 'Lucida handwriting';
+      }
+
+
+
+      .Kacheln {
+      display: flex;
+      justify-content: center;
+      gap: 200px;
+      align-items: center;
+      }
+
+      .box {
+      width: 150px;
+      text-align: center;
+      padding: 30px;
+      background-color:rgb(196, 197, 208);
+      border-radius: 15px 15px 0 0;
+      border-color: rgb(115, 118, 173);
+      height: 170px;
+      border-width: 5px;
+      margin-left: -100px;
+      gap: 200px;
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .headline h4 {
+      font-weight: lighter;
+      font-family: Arial;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: rgb(115, 118, 173);
+      }
+
+    
+      .sidebar {
+      width: 300px;
+      height: auto;
+      left: 0;
+      padding: 10px;
+      text-align: center;
+      }
+
+      .sidebar img {
+      border-radius: 20px;
+      }
+
+      .accordion {
+      padding-top: 20px;
+      padding-bottom: 80px;
+      }
+
+      footer {
+      position: fixed;
+      bottom: 0px;
+      padding-top: 10px;
+      text-align: center;
+      align-items: center;
+      background-color:rgb(240, 239, 239);
+      width: 100%;
+      height: auto;
+      }
+   
+    </style>
+</head>
+
+<body>
+
+  <div id="splashscreen">
+    <img src="Logo.png">
+ </div>
+
+
+<script>
+
+ setTimeout(function() {
+   var splashscreen=document.getElementById('splashscreen')
+   splashscreen.style.display = 'none';
+ }, 1500);
+
+</script>
+
+<div class = "navbar">
+<h2>Enchant</h2>
+<div class="nav">
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="Hintergründe.html">Hintergründe</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Autoren</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Bedeutung & Wirkung</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Portfolio</a>
+  </li>
+</ul>
+</div>
+
+<nav class="search">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Eingabe" aria-label="Search">
+      <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg></button>
+    </form>
+</div>
+</nav>
+</div>
+
+<br>
+<div class="headline">
+<h4>~ Let us <span class="Text">enchant </span> you ~</h4>
+</div>
+
+<div class="main">
+
+<div class="sidebar">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="IMG_1326.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1325.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1333.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1329.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1327.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1331.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1328.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_1330.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="Kacheln">
+
+
+
+ <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+  </svg><br>Shop</div>
+
+  <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+  </svg><br>Beliebt</div>
+
+  <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
+    <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+  </svg><br>Sale</div>
+</div>
+
+</div>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Unsere Motivation 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Wir lieben es, für einen Moment die Realität hinter uns zu lassen.</strong> Wie könte man dies besser tun, als mit einem guten Buch, in dessen Geschichte man eintauchen kann. Bei uns findet definitiv jeder etwas, was zu ihm passt und wenn nicht, stehen wir gerne mit helfender Hand an Ihrer Seite.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Kontaktieren Sie uns!
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Haben Sie Fragen? Hat Sie etwas gestört?</strong> Kontaktieren Sie uns über das Formular im Shop oder schreiben Sie uns eine Mail. enchant.blabla@gmx.com
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Sonstiges
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Hier steht Sonstiges.</strong> Sonstiges
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer">
+   <a> &copy; 2025 - Enchant</a> <br>
+   <a>Besuch uns auf Social media - </a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+    </svg></a>
+    </div>
+    
+</footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

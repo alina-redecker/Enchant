@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enchant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      * {
+      margin: 2px;
+      padding: 0;
+      }
+
+      .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      overflow: hidden;
+      }
+
+      .navbar h2 {
+      color: whitesmoke;
+      font-family: 'Lucida handwriting';
+      padding-top: 10px;
+      font-weight: lighter;
+      font-size: 40px;
+      }
+
+  
+      .navbar {
+      background-image: url(Nav.jfif);
+      padding: 10px;
+      border-radius: 20px;
+      height: 90px;
+      }
+
+      .nav a {
+      color: white;
+      font-size: large;
+      text-align: center;
+      }
+
+      .main {
+    padding: 10px;
+    border-radius: 20px;
+    border-color: rgb(115, 118, 173);
+    border-style: solid;
+    border-width: 3px;
+      }
+
+      .Geschichte {
+        padding: 10px;
+      }
+
+      .Tabelle {
+        padding-top: 40px;
+        padding: 10px;
+      }
+
+      .Tabelle th {
+   color: rgb(115, 118, 173);
+   font-size: larger;
+      }
+
+      .carousel-container {
+            width: 100%; 
+            height: 80px;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 3px solid rgb(115, 118, 173);
+            background: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+      }
+
+       
+      .carousel {
+            display: flex;
+            align-items: center;
+            gap: 50px; 
+            white-space: nowrap;
+            animation: scroll 100s linear infinite; 
+        }
+        .carousel div {
+            width: 140px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            background: rgb(196, 197, 208);
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+      .Zeitstrahl {
+    background-image: url(Hintergrund.webp);
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 120px;
+      }
+
+      .datum {
+    font-weight: bold;
+      }
+
+      footer {
+    position: fixed;
+      bottom: 0px;
+      padding-top: 10px;
+      text-align: center;
+      align-items: center;
+      background-color:rgb(240, 239, 239);
+      width: 100%;
+      height: auto;
+      }
+   
+    </style>
+</head>
+
+<body>
+
+
+
+<script>
+
+
+</script>
+
+<div class = "navbar">
+<h2>Enchant</h2>
+<div class="nav">
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Autoren</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Bedeutung & Wirkung</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Portfolio</a>
+  </li>
+</ul>
+</div>
+
+<nav class="search">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Eingabe" aria-label="Search">
+      <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg></button>
+    </form>
+</div>
+</nav>
+</div><br>
+
+<div class="main">
+
+
+<div class="Geschichte">
+<h3>Märchen in der Romantikepoche</h3>
+Die Brüder Grimm veröffentlichten ihre Märchen in der Zeit der Romantik. Diese lief von 1798-1840 und unterteilt sich in die Früh-, Hoch- und Spätromantik. 
+Sie war unter Anderem eine Art der Gegenbewegung zur Vorgängerepoche. Nach der Epoche der Aufklärung wollten die Vertreter*innen der Romantik in der ,neuen Welt' 
+die Mystik und das Geheimnisvolle bewahren.
+</div>
+
+
+<div class="Tabelle">
+
+<h3>Merkmale der Romantik</h3>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Merkmal</th>
+        <th scope="col">Bedeutung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Weltflucht</td>
+        <td>Ablehnung der Entwicklungen der Zeit, Flucht in Traum- und Melancholiewelten.</td>
+      </tr>
+      <tr>
+        <td>Hinwendung zur Natur</td>
+        <td>Idealisierung der Natur als Ort, an dem die Sehnsucht nach dem Schönen und <br>geheimnisvollen Erfüllung findet.</td>
+      </tr>
+      <tr>
+        <td>Betonung des Individuums</td>
+        <td>Subjektive Gefühle stehen, anders als in der Aufklärung, über dem Verstand.</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+</div><br>
+
+<div class="carousel-container">
+  <div class="carousel">
+      
+      <div>Rumpelstilzchen</div>
+      <div>Der <br>gestiefelte <br>Kater</div>
+      <div>Frau Holle</div>
+      <div>Rapunzel</div>
+      <div>Froschkönig</div>
+      <div>Sterntaler</div>
+      <div>Dornröschen</div>
+      <div>Aschenputtel</div>
+      <div>Rotkäppchen <br>und der<br> böse Wolf</div>
+      <div>Schneewittchen</div>
+      <div>Hänsel und Gretel</div>
+      <div>Der Wolf <br>und die<br> sieben Geißlein</div>
+
+      <div>Rumpelstilzchen</div>
+      <div>Der <br>gestiefelte <br>Kater</div>
+      <div>Frau Holle</div>
+      <div>Rapunzel</div>
+      <div>Froschkönig</div>
+      <div>Sterntaler</div>
+      <div>Dornröschen</div>
+      <div>Aschenputtel</div>
+      <div>Rotkäppchen <br>und der<br> böse Wolf</div>
+      <div>Schneewittchen</div>
+      <div>Hänsel und Gretel</div>
+      <div>Der Wolf <br>und die<br> sieben Geißlein</div>
+
+      <div>Rumpelstilzchen</div>
+      <div>Der <br>gestiefelte <br>Kater</div>
+      <div>Frau Holle</div>
+      <div>Rapunzel</div>
+      <div>Froschkönig</div>
+      <div>Sterntaler</div>
+      <div>Dornröschen</div>
+      <div>Aschenputtel</div>
+      <div>Rotkäppchen <br>und der<br> böse Wolf</div>
+      <div>Schneewittchen</div>
+      <div>Hänsel und Gretel</div>
+      <div>Der Wolf <br>und die<br> sieben Geißlein</div>
+      
+
+  </div>
+</div><br>
+
+
+
+<div class="Zeitstrahl">
+<div class="event">
+<div class="datum">1812 & 1815</div>
+<div class="inhalt">Die Brüder Grimm bringen die erste deutsche Märchensammlung raus.</div><br>
+<div class="event">
+<div class="datum">1835-1875</div>
+<div class="inhalt">Hans Christian Andersen schreibt bekannte Kunstmärchen.</div><br>
+<div class="event">
+<div class="datum">1937</div>
+<div class="inhalt">Walt Disney produziert ersten Animationsfilm auf Basis eines Märchens. -> Schneewittchen und die sieben Zwerge</div><br>
+<div class="event">
+<div class="datum">1950er-2000er</div>
+<div class="inhalt">Märchen erleben neue Popularität. Moderne Adaptionen in Literatur und Film.</div><br>
+<div class="event">
+<div class="datum">ab 2010</div>
+<div class="inhalt">Neuinterpretationen alter Märchen.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<footer>
+  <div class="footer">
+   <a> &copy; 2025 - Enchant</a> <br>
+   <a>Besuch uns auf Social media - </a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+    </svg></a>
+    </div>
+    
+</footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
